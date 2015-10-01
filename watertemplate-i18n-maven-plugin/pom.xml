@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.watertemplate</groupId>
+        <artifactId>watertemplate</artifactId>
+        <version>1.2.0</version>
+        <relativePath>..</relativePath>
+    </parent>
+
+    <artifactId>watertemplate-i18n-maven-plugin</artifactId>
+    <version>1.2.0</version>
+    <packaging>maven-plugin</packaging>
+
+    <name>Water Template i18n Plugin</name>
+    <description>Maven plugin that internationalizes your template files</description>
+    <url>http://watertemplate.org</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/tiagobento/watertemplate-engine.git</connection>
+        <developerConnection>scm:git:git@github.com:tiagobento/watertemplate-engine.git</developerConnection>
+        <url>https://github.com/tiagobento/watertemplate-engine/tree/master/watertemplate-i18n</url>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-annotations</artifactId>
+            <version>3.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-tools-api</artifactId>
+            <version>3.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.spullara.mustache.java</groupId>
+            <artifactId>compiler</artifactId>
+            <version>0.8.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.6</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <goalPrefix>watertemplate-i18n</goalPrefix>
+                    <skipErrorNoDescriptorsFound>false</skipErrorNoDescriptorsFound>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

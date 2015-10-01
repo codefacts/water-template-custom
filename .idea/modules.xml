@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/watertemplate.iml" filepath="$PROJECT_DIR$/watertemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watertemplate-engine/watertemplate-engine.iml" filepath="$PROJECT_DIR$/watertemplate-engine/watertemplate-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watertemplate-example/watertemplate-example.iml" filepath="$PROJECT_DIR$/watertemplate-example/watertemplate-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watertemplate-i18n-maven-plugin/watertemplate-i18n-maven-plugin.iml" filepath="$PROJECT_DIR$/watertemplate-i18n-maven-plugin/watertemplate-i18n-maven-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watertemplate-jaxrs-binding/watertemplate-jaxrs-binding.iml" filepath="$PROJECT_DIR$/watertemplate-jaxrs-binding/watertemplate-jaxrs-binding.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for watertemplate-i18n-maven-plugin" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="watertemplate-i18n-maven-plugin" />
+      </profile>
+      <profile default="false" name="Annotation profile for watertemplate-engine" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="watertemplate-engine" />
+      </profile>
+      <profile default="false" name="Annotation profile for watertemplate-example" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="watertemplate-example" />
+      </profile>
+      <profile default="false" name="Annotation profile for watertemplate-jaxrs-binding" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="watertemplate-jaxrs-binding" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="watertemplate" target="1.8" />
+      <module name="watertemplate-engine" target="1.8" />
+      <module name="watertemplate-example" target="1.8" />
+      <module name="watertemplate-i18n-maven-plugin" target="1.8" />
+      <module name="watertemplate-jaxrs-binding" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
